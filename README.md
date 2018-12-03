@@ -1,4 +1,4 @@
-NIKITA AND NAVYAA'S FINAL PROJECT FOR CS 125
+NIKITA AGARWAL AND NAVYAA SANAN'S FINAL PROJECT FOR CS 125
 
 This project will be an air quality app made in Android Studio. We will return air quality indexes (AQIs) along with personalized recommendations, as well as the option to get information tailored for people with specific conditions (asthma, pregnancy) and specific age groups (children, the elderly) that could increase risk.
 
