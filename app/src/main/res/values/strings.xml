@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">FinalProjectAirQuality</string>
     <string name="action_settings">Settings</string>
+    <string-array name="City">
+        <item>Chicago</item>
+        <item>New York City</item>
+        <item>San Francisco</item>
+    </string-array>
 </resources>
