@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.Switch;
 
 /**
  * Home Page for our Air Quality App
@@ -19,8 +21,6 @@ public class HomePage extends AppCompatActivity implements View.OnClickListener 
     /** Default logging tag for messages from the main activity. */
     private static final String TAG = "MP6";
 
-    private Button getAirQuality;
-
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,9 +29,34 @@ public class HomePage extends AppCompatActivity implements View.OnClickListener 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        getAirQuality = (Button) findViewById(R.id.AQIButton);
+        final Button getAirQuality = findViewById(R.id.AQIButton);
+        getAirQuality.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(HomePage.this, InfoResults.class));
+            }
 
-      /*  FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        });
+
+
+        final Button reset = findViewById(R.id.ResetButton);
+        reset.setOnClickListener(new View.OnClickListener() {
+            CheckBox cb1 = (CheckBox) findViewById(R.id.cb1);
+            CheckBox cb2 = (CheckBox) findViewById(R.id.cb2);
+            Switch s1 = (Switch) findViewById(R.id.switch1);
+            Switch s2 = (Switch) findViewById(R.id.switch2);
+            public void onClick(View v) {
+               recreate();
+               cb1.setChecked(false);
+               cb2.setChecked(false);
+               s1.setChecked(false);
+               s2.setChecked(false);
+            }
+        });
+
+
+
+       /**
+        * FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
