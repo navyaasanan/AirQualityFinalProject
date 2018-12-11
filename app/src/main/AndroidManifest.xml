@@ -3,6 +3,10 @@
     package="com.example.navyaasanan.finalprojectairquality">
     <uses-permission android:name="android.permission.INTERNET"/>
 
+    <meta-data
+        android:name="https://api.breezometer.com/air-quality/v2/"
+        android:value="4483a60facf6499da1b2df96085435a3"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"

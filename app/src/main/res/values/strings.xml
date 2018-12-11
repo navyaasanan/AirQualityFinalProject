@@ -2,8 +2,13 @@
     <string name="app_name">FinalProjectAirQuality</string>
     <string name="action_settings">Settings</string>
     <string-array name="City">
+        <item>Austin</item>
+        <item>Beijing</item>
         <item>Chicago</item>
+        <item>London</item>
+        <item>New Delhi</item>
         <item>New York City</item>
         <item>San Francisco</item>
+
     </string-array>
 </resources>
